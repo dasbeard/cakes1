@@ -4,6 +4,7 @@
   --color3: #8EADBC;
   --color4: #EFCCD0;
   --color5: #A27A7F;
+  --color6: #6F5F61;
 }
 
 body{
@@ -103,16 +104,23 @@ body{
 
 
 
+/* ========== About ========== */
+.about{
+  margin-bottom: 2.5rem;  
+}
+
+
+/* =^^^^^^^^= About =^^^^^^^^= */
+
+
+
+
+
 /* ========== Menu Items ========== */
 .menuItems {
-  margin-bottom: 2rem;
-  border-radius: 3px 3px 3px 3px;
-  -moz-border-radius: 3px 3px 3px 3px;
-  -webkit-border-radius: 3px 3px 3px 3px;
   border: 2px solid rgba(197, 185, 185, 0.795);
   padding: 0px;
-  
-
+  margin-bottom: 2.5rem;
 }
 
 .menuItems .menuItem{
@@ -136,7 +144,6 @@ body{
 
 .menuItems2 .menuItem:nth-child(1){
   background-image: url("../assets/menu images/IMG_6182.jpg");
-  
 }
 
 .menuItems2 .menuItem:nth-child(2){
@@ -146,7 +153,26 @@ body{
   background-image: url("../assets/menu images/IMG_8730.jpg");
 }
 
+.menuItems .menuItem .showmore{
+  visibility: hidden;
+  color: #000000;
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 18%;
+  text-align: center;
+  text-shadow: 2px 2px 4px var(--color2);
+}
+
+.menuItems .menuItem:hover .showmore{
+  background-color: rgba(239, 204, 208, .6);
+  height: 100%;
+  visibility: visible;
+  cursor: pointer;
+}
+
 /* =^^^^^^^^= Menu Items =^^^^^^^^= */
+
+
 
 
 
@@ -155,15 +181,49 @@ body{
 .testimonials .callout{
   background-color: rgba(239, 204, 208, .7);
   border-color: transparent;
-
-}
-
-.testimonials .reviews{
-  /* height: 225px; */
-}
-
-.testimonials .reviews .prof{
-  /* outline: 1px solid red; */
+  margin-bottom: 2.5rem;
+  
 }
 
 /* =^^^^^^^^= Testimonials =^^^^^^^^= */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== AB Footer ===== */
+#ABFooter{
+  margin: 0;
+  background: rgba(219,215,217,1);
+  background: -moz-linear-gradient(top, rgba(219,215,217,1) 0%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 9%, rgba(0,0,0,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(219,215,217,1)), color-stop(8%, rgba(0,0,0,1)), color-stop(9%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
+  background: -webkit-linear-gradient(top, rgba(219,215,217,1) 0%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 9%, rgba(0,0,0,1) 100%);
+  background: -o-linear-gradient(top, rgba(219,215,217,1) 0%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 9%, rgba(0,0,0,1) 100%);
+  background: -ms-linear-gradient(top, rgba(219,215,217,1) 0%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 9%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(to bottom, rgba(219,215,217,1) 0%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 9%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbd7d9', endColorstr='#000000', GradientType=0 );
+
+  color: var(--color5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .7rem;
+}
+
+#ABFooter p{
+  margin-top: 10px;
+}
+
+#ABFooter a{
+  color: var(--color4);        
+}
+
+
+/* =====^^^ AB Footer ^^^===== */
