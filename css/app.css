@@ -147,3 +147,23 @@ body{
 }
 
 /* =^^^^^^^^= Menu Items =^^^^^^^^= */
+
+
+
+/* ========== Testimonials ========== */
+
+.testimonials .callout{
+  background-color: rgba(239, 204, 208, .7);
+  border-color: transparent;
+
+}
+
+.testimonials .reviews{
+  /* height: 225px; */
+}
+
+.testimonials .reviews .prof{
+  /* outline: 1px solid red; */
+}
+
+/* =^^^^^^^^= Testimonials =^^^^^^^^= */
